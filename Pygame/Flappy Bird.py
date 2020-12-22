@@ -67,7 +67,6 @@ while True:
     pipe_bottom_y = pipe_top_length + 200
     screen.blit(back, (0, 0))
     birdrect = screen.blit(bird, (x-30, y-30))
-    #birdrect = pygame.draw.circle(screen, (yellow), (x, y), radius, 0)
     pipe_top_rect = pygame.draw.rect(screen, (dark_green), (pipe_x, 0, pipe_width, pipe_top_length), 0)
     pipe_bottom_rect = pygame.draw.rect(screen, (dark_green), (pipe_x, pipe_bottom_y, pipe_width, 700), 0)
     text_two("Score: " + str(score), 200, 50)

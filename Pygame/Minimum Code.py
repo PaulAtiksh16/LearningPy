@@ -1,4 +1,5 @@
 import pygame
+from sys import exit
 from pygame.locals import *
 pygame.init()
 
@@ -34,7 +35,7 @@ screen = pygame.display.set_mode((800,570))
 pygame.display.set_caption("Shapes!!!")
 while True:
     for event in pygame.event.get():
-        if event.type == QUIT:
+        if event.type == pygame.QUIT:
             pygame.quit()
             exit()
     pygame.display.update()
